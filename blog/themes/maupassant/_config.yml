@@ -75,10 +75,10 @@ canvas_nest:
   zIndex: ## The z-index property of the background, e.g. "-1"
   count: ## Quantity of lines, e.g. "150"
 donate:
-  enable: false ## If you want to display the donate button after each post, please set the value to true and fill the following items on your need. You can also enable donate button in a page by adding a "donate: true" item to the front-matter.
+  enable: true ## If you want to display the donate button after each post, please set the value to true and fill the following items on your need. You can also enable donate button in a page by adding a "donate: true" item to the front-matter.
   github: ## GitHub URL, e.g. https://github.com/Kaiyuan/donate-page
   alipay_qr: ## Path of Alipay QRcode image, e.g. /img/AliPayQR.png
-  wechat_qr: ## Path of Wechat QRcode image, e.g. /img/WeChatQR.png
+  wechat_qr: /source/image/common/pay_wx.jpg
   btc_qr: ## Path of Bitcoin QRcode image, e.g. /img/BTCQR.png
   btc_key: ## Bitcoin key, e.g. 1KuK5eK2BLsqpsFVXXSBG5wbSAwZVadt6L
   paypal_url: ## Paypal URL, e.g. https://www.paypal.me/tufu9441
@@ -96,18 +96,12 @@ totop: true ## If you want to use the rocketship button to return to the top, se
 external_css: false ## If you want to load an external CSS file, set the value to true and create a file named "external.css" in the source/css folder.
 
 menu:
-  - page: home
+  - page: blog
     directory: .
-    icon: fa-home
+    icon: fa-rss
   - page: archive
     directory: archives/
     icon: fa-archive
-  - page: about
-    directory: about/
-    icon: fa-user
-  - page: rss
-    directory: atom.xml
-    icon: fa-rss
 
 widgets: ## Seven widgets in sidebar provided: search, info, category, tag, recent_posts, recent_comments and links.
   - search
@@ -116,24 +110,17 @@ widgets: ## Seven widgets in sidebar provided: search, info, category, tag, rece
   - tag
   - recent_posts
   - recent_comments
-  - links
 
 info:
-  avatar: /img/avatar.png
-  discription: To be a better man.
+  avatar: /source/image/common/avatar.png
+  discription: 业精于勤，荒于嬉；行成于思，毁于随。
   outlinkitem:
-    - name: twitter
-      outlink: https://twitter.com/username
-      message: Twitter
     - name: envelope
-      outlink: mailto:admin@domain.com
+      outlink: mailto:574145545@qq.com
       message: Email
     - name: github
-      outlink: https://github.com/username
+      outlink: https://github.com/tonyChenHey
       message: Github
-    - name: rss
-      outlink: /atom.xml
-      message: RSS
 
 links:
   - title: site-name1
